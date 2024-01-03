@@ -1,7 +1,9 @@
 
 File Upload and Management System
 
-This project is a File Upload and Management System built using Node.js, Express.js, MongoDB, Cloudinary, and Nodemailer. It allows users to upload various types of files, including images and videos, which are then stored in the cloud and the database. Additionally, the system sends email notifications using Nodemailer when a file is successfully uploaded.
+This project is a File Upload and Management System built using Node.js, Express.js, MongoDB, Cloudinary, and Nodemailer. 
+It allows users to upload various types of files, including images and videos, which are then stored in the cloud and the database. 
+Additionally, the system sends email notifications using Nodemailer when a file is successfully uploaded.
 
 Table of Contents
 Prerequisites
@@ -13,8 +15,8 @@ Usage
 API Endpoints
 File Types
 Email Notifications
-Contributing
-License
+
+
 Prerequisites
 Before you begin, ensure you have the following installed:
 
