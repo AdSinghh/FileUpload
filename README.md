@@ -1,11 +1,12 @@
 
-File Upload and Management System
+# File Upload and Management System #
 
 This project is a File Upload and Management System built using Node.js, Express.js, MongoDB, Cloudinary, and Nodemailer. 
 It allows users to upload various types of files, including images and videos, which are then stored in the cloud and the database. 
 Additionally, the system sends email notifications using Nodemailer when a file is successfully uploaded.
 
-Table of Contents
+*Table of Contents*
+
 Prerequisites
 Getting Started
 Project Structure
@@ -25,24 +26,24 @@ MongoDB
 Cloudinary account (for file storage)
 Gmail account (for email notifications)
 
-Getting Started
+## Getting Started
 
 1.Clone the repository:
 git clone https://github.com/yourusername/file-upload-system.git
 cd file-upload-system
 
 
-2.Install dependencies
-npm install
+2. Install dependencies
+   npm install
 
-3.Create a .env file in the project root and add your environment variables.
+3. Create a .env file in the project root and add your environment variables.
 
-4.Start the application:
+4. Start the application:
 
 npm run dev
 The application will be running at http://localhost:3000 by default.
 
-Project Structure
+## Project Structure
 The project follows a modular structure:
 
 controllers: Contains functions handling file upload and related operations.
@@ -91,7 +92,7 @@ Image Size Reduction and Upload:
 POST /api/v1/imageSizeReducer
 Refer to the corresponding controller functions for additional details.
 
-File Types
+# File Types
 Supported Image Types:
 
 JPEG, PNG, JPG
