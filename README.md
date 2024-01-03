@@ -46,7 +46,7 @@ npm run dev
 The application will be running at http://localhost:3000 by default.
 <br><br>
 
-**Project Structure**
+## Project Structure
 
 The project follows a modular structure:
 
@@ -65,8 +65,8 @@ The project follows a modular structure:
 - **app.js**: Main entry point of the application.
 
 
-**Environment Variables**
-<br><br>
+# Environment Variables
+
 Create a .env file in the project root and add the following variables:
 
 - PORT=3000
@@ -82,7 +82,7 @@ Create a .env file in the project root and add the following variables:
 Update the values according to your configuration.
 <br><br>
 
-**Configuration**
+# Configuration
 
 Database Configuration (config/database.js):
 Update the Mongoose connection options if needed.
