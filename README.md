@@ -119,13 +119,14 @@ Refer to the corresponding controller functions for additional details.
 
 
 Supported Image Types:
-
 JPEG, PNG, JPG
+
 Supported Video Types:
-
 MP4, MKV, MOV
-Supported for Size Reduction:
 
+Supported for Size Reduction:
 JPEG, PNG
-Email Notifications
+<br><br>
+**Email Notifications**
+
 The system sends email notifications using Nodemailer when a file is successfully uploaded. Check your Gmail account for these notifications.
