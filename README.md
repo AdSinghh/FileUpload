@@ -40,45 +40,47 @@ Before you begin, ensure you have the following installed:
    npm install
 
 3.**Create a .env file in the project root and add your environment variables.**
-
+<br><br>
 4. **Start the application:**
-```bash
 npm run dev
 The application will be running at http://localhost:3000 by default.
+<br><br>
 
-##Project Structure
+**Project Structure**
 
 The project follows a modular structure:
 
-**controllers**: Contains functions handling file upload and related operations.
+- **controllers**: Contains functions handling file upload and related operations.
 
-**config**: Configuration files, e.g., for connecting to the database and Cloudinary.
+- **config**: Configuration files, e.g., for connecting to the database and Cloudinary.
 
-**models**: Mongoose models for MongoDB.
+- **models**: Mongoose models for MongoDB.
 
-**routes**: Express routes for different file upload scenarios.
+- **routes**: Express routes for different file upload scenarios.
 
-**files**: Temporary storage for uploaded files (can be changed in app.js).
+- **files**: Temporary storage for uploaded files (can be changed in app.js).
 
-**views**: Frontend templates (if applicable).
+- **views**: Frontend templates (if applicable).
 
-**app.js**: Main entry point of the application.
+- **app.js**: Main entry point of the application.
 
 
 **Environment Variables**
-
+<br><br>
 Create a .env file in the project root and add the following variables:
-```bash
-PORT=3000
-MONGODB_URL=mongodb://localhost:27017/file_upload_db
-CLOUD_NAME=your_cloudinary_cloud_name
-API_KEY=your_cloudinary_api_key
-API_SECRET=your_cloudinary_api_secret
-MAIL_HOST=smtp.gmail.com
-MAIL_USER=your_gmail@gmail.com
-MAIL_PASS=your_gmail_password
+
+- PORT=3000
+- MONGODB_URL=mongodb://localhost:27017/file_upload_db
+- CLOUD_NAME=your_cloudinary_cloud_name
+- API_KEY=your_cloudinary_api_key
+- API_SECRET=your_cloudinary_api_secret
+- MAIL_HOST=smtp.gmail.com
+- MAIL_USER=your_gmail@gmail.com
+- MAIL_PASS=your_gmail_password
+<br><br>
 
 Update the values according to your configuration.
+<br><br>
 
 **Configuration**
 
@@ -87,6 +89,7 @@ Update the Mongoose connection options if needed.
 
 Cloudinary Configuration (config/cloudinary.js):
 Update the Cloudinary API credentials.
+<br><br>
 
 # Usage
 
@@ -94,21 +97,24 @@ Update the Cloudinary API credentials.
 Visit http://localhost:3000 in your browser to access the application.
 Use the provided API endpoints for different file upload scenarios.
 Check your Gmail inbox for email notifications after successful file uploads.
+<br><br>
 API Endpoints
-Local File Upload:
-
+<br><br>
+1.Local File Upload:
 POST /api/v1/localFileUpload
-Image Upload:
 
+2.Image Upload:
 POST /api/v1/imageUpload
-Video Upload:
 
+3.Video Upload:
 POST /api/v1/videoUpload
-Image Size Reduction and Upload:
 
+4.Image Size Reduction and Upload:
 POST /api/v1/imageSizeReducer
-Refer to the corresponding controller functions for additional details.
 
+
+Refer to the corresponding controller functions for additional details.
+<br><br>
 # File Types
 
 
