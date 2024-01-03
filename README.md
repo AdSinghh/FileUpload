@@ -5,57 +5,70 @@ This project is a File Upload and Management System built using Node.js, Express
 It allows users to upload various types of files, including images and videos, which are then stored in the cloud and the database. 
 Additionally, the system sends email notifications using Nodemailer when a file is successfully uploaded.
 
-*Table of Contents*
+## Table of Contents
 
-Prerequisites
-Getting Started
-Project Structure
-Environment Variables
-Configuration
-Usage
-API Endpoints
-File Types
-Email Notifications
+1. [Prerequisites](#prerequisites)
+2. [Getting Started](#getting-started)
+3. [Project Structure](#project-structure)
+4. [Environment Variables](#environment-variables)
+5. [Configuration](#configuration)
+6. [Usage](#usage)
+7. [API Endpoints](#api-endpoints)
+8. [File Types](#file-types)
+9. [Email Notifications](#email-notifications)
 
+## Prerequisites
 
-Prerequisites
 Before you begin, ensure you have the following installed:
 
-Node.js and npm
-MongoDB
-Cloudinary account (for file storage)
-Gmail account (for email notifications)
+- Node.js and npm
+- MongoDB
+- Cloudinary account (for file storage)
+- Gmail account (for email notifications)
 
 ## Getting Started
 
-1.Clone the repository:
-git clone https://github.com/yourusername/file-upload-system.git
-cd file-upload-system
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/yourusername/file-upload-system.git
+   cd file-upload-system
 
 
-2. Install dependencies
+2. **Install dependencies**
+   ```bash
    npm install
 
-3. Create a .env file in the project root and add your environment variables.
+3.**Create a .env file in the project root and add your environment variables.**
 
-4. Start the application:
-
+4. **Start the application:**
+```bash
 npm run dev
 The application will be running at http://localhost:3000 by default.
 
-## Project Structure
+##Project Structure
+
 The project follows a modular structure:
 
-controllers: Contains functions handling file upload and related operations.
-config: Configuration files, e.g., for connecting to the database and Cloudinary.
-models: Mongoose models for MongoDB.
-routes: Express routes for different file upload scenarios.
-files: Temporary storage for uploaded files (can be changed in app.js).
-views: Frontend templates (if applicable).
-app.js: Main entry point of the application.
-Environment Variables
-Create a .env file in the project root and add the following variables:
+**controllers**: Contains functions handling file upload and related operations.
 
+**config**: Configuration files, e.g., for connecting to the database and Cloudinary.
+
+**models**: Mongoose models for MongoDB.
+
+**routes**: Express routes for different file upload scenarios.
+
+**files**: Temporary storage for uploaded files (can be changed in app.js).
+
+**views**: Frontend templates (if applicable).
+
+**app.js**: Main entry point of the application.
+
+
+**Environment Variables**
+
+Create a .env file in the project root and add the following variables:
+```bash
 PORT=3000
 MONGODB_URL=mongodb://localhost:27017/file_upload_db
 CLOUD_NAME=your_cloudinary_cloud_name
@@ -64,16 +77,20 @@ API_SECRET=your_cloudinary_api_secret
 MAIL_HOST=smtp.gmail.com
 MAIL_USER=your_gmail@gmail.com
 MAIL_PASS=your_gmail_password
+
 Update the values according to your configuration.
 
-Configuration
+**Configuration**
+
 Database Configuration (config/database.js):
 Update the Mongoose connection options if needed.
 
 Cloudinary Configuration (config/cloudinary.js):
 Update the Cloudinary API credentials.
 
-Usage
+# Usage
+
+
 Visit http://localhost:3000 in your browser to access the application.
 Use the provided API endpoints for different file upload scenarios.
 Check your Gmail inbox for email notifications after successful file uploads.
@@ -93,6 +110,8 @@ POST /api/v1/imageSizeReducer
 Refer to the corresponding controller functions for additional details.
 
 # File Types
+
+
 Supported Image Types:
 
 JPEG, PNG, JPG
