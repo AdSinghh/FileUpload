@@ -127,6 +127,6 @@ MP4, MKV, MOV
 Supported for Size Reduction:
 JPEG, PNG
 <br><br>
-**Email Notifications**
+# Email Notifications
 
 The system sends email notifications using Nodemailer when a file is successfully uploaded. Check your Gmail account for these notifications.
